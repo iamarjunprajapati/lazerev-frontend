@@ -1,16 +1,19 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     /* position: relative; */
 }
-body,html{
+
+body,
+html {
     width: 100%;
     height: 100%;
     font-family: neue-haas-grotesk-display, sans-serif;
 }
+
 /* nav */
-nav{
+nav {
     width: 100%;
     height: 80px;
     padding: 0px 100px;
@@ -22,35 +25,43 @@ nav{
     text-transform: uppercase;
     background-color: black;
 }
-nav>h1,.menu,button{
+
+nav>h1,
+.menu,
+button {
     z-index: 3;
 }
-.nav-logo{
+
+.nav-logo {
     font-weight: 800;
 }
-.menu>ul{
+
+.menu>ul {
     font-size: smaller;
     list-style: none;
     gap: 20px;
     display: flex;
 }
-#nav-button{
+
+#nav-button {
     display: flex;
     /* width: 90px; */
-    padding: 10px 15px ;
+    padding: 10px 15px;
     text-transform: uppercase;
     justify-content: space-between;
     color: white;
-    border-radius:50px;
+    border-radius: 50px;
     border: none;
     background-color: green;
 
 }
-#nav-button>svg{
+
+#nav-button>svg {
     margin-left: 10px;
     height: 16px;
 }
-#nav-dropdown{
+
+#nav-dropdown {
     position: absolute;
     width: 84%;
     left: 0;
@@ -61,31 +72,36 @@ nav>h1,.menu,button{
     transition: all ease 0.6s;
     display: flex;
     gap: 20px;
-    padding-left: 330px ;
+    padding-left: 330px;
     overflow: hidden;
 }
-nav:hover #nav-dropdown{
+
+nav:hover #nav-dropdown {
     height: 150px;
-    bottom: -200px;
+    bottom: -150px;
     background-color: black;
     /* padding: 20px 100px; */
 }
 
-.dropdown-bottom>p{
-    font-size: 12px;
-    font-weight: 100;
-    /* display: none; */
+.dropdown-bottom>h5 {
+    margin-bottom: 10px;
 }
 
-#main{
+.dropdown-bottom>p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: 100;
+}
+
+#main {
     display: block;
     width: 100%;
-    height: 100%;
     color: white;
+    background: black;
 }
 
 /* page1 */
-#page1{
+#page1 {
     width: 100%;
     height: 100vh;
     background: black;
@@ -93,29 +109,84 @@ nav:hover #nav-dropdown{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
-#page1>h1{
+
+#page1>h1 {
     font-size: 4.3rem;
     line-height: 4.6rem;
-    font-weight: bolder ;
+    font-weight: bolder;
 }
-.page1-para{
-    margin-top: 40px;
+
+.page1-para {
+    margin-top: 20px;
     width: 40%;
-    text-align:center;
+    text-align: center;
 }
 
+.page1-button {
+    align-items: center;
+    border: 1px solid green;
+    background-color: rgba(0, 128, 0, 0.164);
+    line-height: 2;
+    padding: 3px 10px;
+    color: rgb(0, 184, 0);
+    border-radius: 50px;
 
+}
 
+/* page2 */
 
-
-
-
-
-
-#page2{
-    width: 100%;
+#page2 {
+    margin: auto;
+    width: 84%;
     height: 100vh;
     background: black;
+    padding: 20px 0px;
+    display: flex;
+    border-top: 1px solid #dadada69;
+    justify-content: space-between;
+}
+
+.page2-left {
+    /* background-color: gray; */
+    width: 40%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#exclusive-insight {
+    width: 50%;
+    margin-top: 20px;
+    font-size: small;
+}
+
+#page2-left-bottom {
+    width: 90%;
+}
+
+.page2-right {
+    /* background-color: gray; */
+    width: 50%;
+    height: 450px;
+}
+.right-element{
+    padding-top:20px ;
+    padding-bottom:50px ;
+    border-top: 1px solid grey;
+}
+.right-element>h2{
+    width: 80%;
+    font-size: 1.2rem;
+}
+.right-element>img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    scale: 0;
 }
