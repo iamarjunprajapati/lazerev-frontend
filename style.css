@@ -277,7 +277,7 @@ nav:hover #nav-dropdown {
     border-radius: 40px;
     border:none;
     font-size: smaller;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-transform: uppercase;
     background-color: rgb(79,91,255);
     color: white;
@@ -355,7 +355,7 @@ nav:hover #nav-dropdown {
 }
 .page5-container{
     width: 100%;
-    padding: 50px 0px;
+    padding-top: 50px ;
     border-top: 1px solid #dadada69;
     display: flex;
     justify-content: space-between;
@@ -374,6 +374,8 @@ nav:hover #nav-dropdown {
     border: none;
     border-radius: 100px;
     font-size: small;
+    position: sticky;
+    top: 15%;
 
 }
 .page5-right{
@@ -423,10 +425,17 @@ nav:hover #nav-dropdown {
     overflow: hidden;
     transition: all ease 0.3s;
 }
+.services-items-container:hover h2{
+    padding-left: 20px;
+}
+.services-items-container:hover i{
+    padding-right: 20px;
+}
 .services-items-container>h2{
-    width: 25%;
+    width: 30%;
     font-size: larger;
     font-weight: 100;
+    transition: all ease 0.3s;
 }
 .services-items-container>div{
     width: 70% ;
@@ -441,6 +450,7 @@ nav:hover #nav-dropdown {
 }
 .services-item-right>i{
     font-size:large ;
+    transition: all ease 0.3s;
 }
 .services-items-container>.overlay{
     width: 100%;
@@ -454,8 +464,109 @@ nav:hover #nav-dropdown {
 .services-items-container:hover>.overlay{
     top: 0;
 }
+summary::marker{
+    content: "";
+}
 
-
-
-
+/* page6 */
+#page6{
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 50px 100px 0px 100px;
+}
+.page6-container{
+    display: flex;
+    justify-content: space-between;
+}
+.page6-left{
+width: 25%;
+display: flex;
+align-items: center;
+}
+.page6-right{
+width: 70%;
+}
+.page6-left>button{
+    width: 100%;
+    background-color: rgb(79,91,255);
+    color: white;
+    padding: 17px 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    font-size: small;
+    position: sticky;
+    top: 15%;
+}
+.page6-right>h1{
+    font-size: 5rem;
+    letter-spacing: -3px;
+    margin-bottom: 60px;
+}
+.page6-right>p{
+    margin-bottom: 60px;
+    padding-right:160px ;
+    font-size: larger;
+}
+.page6-bottom{
+    height: 60vh;
+    width: 100%;
+    border-top: 1px solid gray;
+    display: flex;
+}
+.page6-bottom-1{
+    width: 25%;
+}
+.page6-bottom-2{
+    width: 25%;
+}
+.page6-bottom-3{
+    width: 15%;
+}
+.page6-bottom-4{
+    width: 20%;
+}
+.page6-bottom-5{
+    width: 15%;
+}
+.page6-bottom>div{
+    /* background-color: gray; */
+    border: 1px solid  #cacaca;
+    height: 300px;
+}
+.page6-bottom-section>h5{
+    font-weight: 100;
+    margin:15px 0px  40px 0px;
+}
+.page6-bottom-section>p>span{
+    display: flex;
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 3px;
+    border-radius: 50%;
+    background-color: #dadada69;
+}
+.page6-bottom-section{
+    padding: 2px;
+}
+.page6-bottom-section>p{
+    width: 150px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 2px;
+    margin: 2px 0px;
+    border-radius: 50px;
+}
+.page6-bottom-2>p{
+    width: 180px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 2px;
+    margin: 2px 0px;
+    border-radius: 50px;
+}
 
