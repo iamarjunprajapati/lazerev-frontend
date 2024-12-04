@@ -90,20 +90,69 @@ function page3Animation() {
     })
 }
 page3Animation();
-
-let imageParent = document.querySelectorAll('.right-bottom');
-
-imageParent.forEach((image) => {
-    image.addEventListener('mouseenter', () => {
-        image.children[1].style.opacity = "1";
-        image.children[1].play(); 
+// page4
+function page4Animation() {
+    let imageParent = document.querySelectorAll('.right-bottom');
+    imageParent.forEach((image) => {
+        image.addEventListener('mouseenter', () => {
+            image.children[1].style.opacity = "1";
+            image.children[1].play();
+        })
+        image.addEventListener('mouseleave', () => {
+            image.children[1].style.opacity = "0";
+            image.children[1].currentTime = "0";
+            image.children[1].pause();
+        })
     })
-    image.addEventListener('mouseleave', () => {
-        image.children[1].style.opacity = "0"; 
-        image.children[1].currentTime = "0";
-        image.children[1].pause();
-    })
+}
+page4Animation();
 
+// page5
+function page6Animation() {
+
+    gsap.from('.page6-bottom-section>p', {
+        x: 0,
+        duration: 1,
+        scrollTrigger: {
+            trigger: ".page6-bottom-2",
+            scrub: 2,
+            start: "top 70%",
+            scroller: "body",
+            end: "top 7%",
+            // markers: true
+        }
+    })
+}
+page6Animation();
+
+// loadingAnimation
+
+// GSAP animation for page1
+let tl = gsap.timeline();
+tl.from("#page1", {
+    opacity : 0,
+    duration : 0.2
 })
+tl.from("#page1", {
+    duration: 2, // Animation duration in seconds
+    ease: "expo.out", // Easing function for a smooth effect
+    transform: "scaleX(0.5) scaleY(0.2)",
+    borderRadius: "100px",
+});
+tl.from("nav", {
+    opacity : 0,
+})
+
+tl.from("#page1 h1", {
+    opacity: 0,
+    duration: 0.5,
+});
+tl.from("#page1 p", {
+    opacity: 0,
+    duration: 0.5,
+}, "-=0.3");
+
+
+
 
 
